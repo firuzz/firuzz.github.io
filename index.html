@@ -3,12 +3,189 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Hello World</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <title>Andrés Ezequiel Viso</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="author" content="Andrés Ezequiel Viso">
+  <meta name="description" content="Personal website">
+  <link rel="stylesheet" href="css/style.css">
+  <script language="javascript">
+function show(id)
+{
+    var elems = document.getElementsByClassName('content')
+    for (var i = 0; i < elems.length; ++i)
+    {
+        elems[i].classList.remove('visible')
+    }
+    document.getElementById(id).classList.add('visible')
+}
+
+function resolve()
+{
+    var authors = {
+        '{AA}'  : '<a href="https://dblp.uni-trier.de/pers/hd/a/Arbiser:Ariel" target="_blank">A. Arbiser</a>',
+        '{AB}'  : '<a href="https://www.irif.fr/~buccia/" target="_blank">A. Bucciarelli</a>',
+        '{AEV}' : 'A. Viso',
+        '{ANR}' : '<a href="https://dblp.uni-trier.de/pers/r/R=iacute=os:Alejandro.html" target="_blank">A. Ríos</a>',
+        '{AM}'  : '<a href="https://dblp.uni-trier.de/pers/m/Mart=iacute=n:Alexis" target="_blank">A. Martín</a>',
+        '{EAB}' : '<a href="https://ebonelli.github.io/" target="_blank">E. Bonelli</a>',
+        '{DK}'  : '<a href="https://www.irif.fr/~kesner/" target="_blank">D. Kesner</a>',
+        '{JIE}' : '<a href="https://dblp.uni-trier.de/pers/hd/e/Edi:Juan" target="_blank">J. Edi</a>',
+        '{MAR}' : '<a href="https://www.mat.unb.br/ayala/" target="_blank">M. Ayala-Rincón</a>'
+    }
+    var elems = document.getElementsByClassName('author')
+    for (var i = 0; i < elems.length; ++i)
+    {
+        elems[i].innerHTML = authors[elems[i].textContent]
+    }
+
+    var institutes = {
+        '{DC}'   : '<a href="https://dc.uba.ar/" target="_blank">Departamento de Computación</a>',
+        '{FCEN}' : '<a href="https://exactas.uba.ar/" target="_blank">Facultad de Ciencias Exactas y Naturales</a>',
+        '{FDM}'  : '<a href="https://furiademolvania.bandcamp.com/" target="_blank">Furia de Molvania</a>',
+        '{KLN}'  : '<a href="https://klunoficial.bandcamp.com/" target="_blank">klun:</a>',
+        '{LRL}'  : '<a href="https://lorel-team.github.io/" target="_blank">LoReL research team</a>',
+        '{SWH}'  : '<a href="https://www.softwareheritage.org/" target="_blank">Software Heritage</a>',
+        '{UBA}'  : '<a href="https://uba.ar/" target="_blank">Universidad de Buenos Aires</a>',
+        '{UNQ}'  : '<a href="https://www.unq.edu.ar/" target="_blank">Universidad Nacional de Quilmes</a>'
+    }
+    var elems = document.getElementsByClassName('institute')
+    for (var i = 0; i < elems.length; ++i)
+    {
+        elems[i].innerHTML = institutes[elems[i].textContent]
+    }
+}
+  </script>
 </head>
-<body>
-  Hello World
+<body onload="resolve();">
+<div id="front-matter">
+  <img id="avatar" src="images/profile.jpg" alt="Avatar" />
+</div>
+
+<div id="main-matter"></div>
+<h1>Andrés Ezequiel Viso</h1>
+<div>Profesor Instructor at <span class="institute">{UNQ}</span>.</div>
+
+<ul id="menu">
+  <li onclick="show('about');">About</li>
+  <li onclick="show('research');">Research</li>
+  <li onclick="show('teaching');">Teaching</li>
+</ul>
+
+<div id="about" class="content visible">
+<p>I studied Computer Science at the University of Buenos Aires and made my PhD on semantics for functional programming languages. My interest vary from theoretical aspects of Computer Science to more practical solutions involving Computer Vision and Artificial Intelligence. Aside of my academical research activity, I've been working on the industry developing software for the past decade. Most of these project involved using GP/GPU technology for real-time audio/video processing combined with AI and CV techniques.</p>
+
+<p>I'm a member of the <span class="institute">{LRL}</span> at <span class="institute">{UNQ}</span>, currently with a post-doc position at <span class="institute">{SWH}</span>.</p>
+
+<p>I'm also a part time musician, playing bass guitar other instruments in different bands, although I consider myself mainly a guitar player. Got your attention?... Help yourself: <span class="institute">{KLN}</span>, <span class="institute">{FDM}</span>.</p>
+</div>
+
+<div id="research" class="content">
+<h2>Journals</h2>
+<ul>
+  <li>
+    <span class="author">{MAR}</span>, <span class="author">{EAB}</span>, <span class="author">{JIE}</span>, and <span class="author">{AEV}</span>. <span class="title">Typed Path Polymorphism</span>.<br/>
+    <span class="journal">Theoretical Computer Science</span>. 781: 111-130, 2019.
+  </li>
+</ul>
+
+<h2>Conferences</h2>
+<ul>
+  <li>
+    <span class="author">{AM}</span>, <span class="author">{ANR}</span>, and <span class="author">{AEV}</span>. <span class="title">Pure Pattern Calculus à la de Bruijn</span>.<br/>
+    Proceedings of <span class="conference">15th International Worshop on Logical and Sematic Frameworks, with Appications (LSFA)</span>, Salvador, BA, Brazil, 27-28 August, 2020.
+  </li>
+  <li>
+    <span class="author">{AB}</span>, <span class="author">{DK}</span>, <span class="author">{ANR}</span>, and <span class="author">{AEV}</span>. <span class="title">The Bang Calculus Revisited</span>.<br/>
+    Proceedings of <span class="conference">15th International Symposium on Functional and Logic Programming (FLOPS)</span>, Akita, Japan, 14-16 September, 2020.
+  </li>
+  <li>
+    <span class="author">{EAB}</span>, <span class="author">{DK}</span>, and <span class="author">{AEV}</span>. <span class="title">Strong Bisimulation for Control Operators</span>.<br/>
+    Proceedings of <span class="conference">28th EACSL International Conference on Conputer Science and Logic (CSL)</span>, Barcelona, Spain, 13-16 January, 2020.
+  </li>
+  <li>
+    <span class="author">{DK}</span>, <span class="author">{ANR}</span>, and <span class="author">{AEV}</span>. <span class="title">Call-by-Need, Neededness and All That</span>.<br/>
+    Proceedings of <span class="conference">21st International Conference on Foundations of Software Science and Computation Structures (FoSSaCS)</span>, Thessaloniki, Greece, 14-20 April, 2018.
+  </li>
+  <li>
+    <span class="author">{JIE}</span>, <span class="author">{EAB}</span>, and <span class="author">{AEV}</span>. <span class="title">Efficient Type Checking for Path Polymorphism</span>.<br/>
+    Post-proceedings of <span class="conference">21st International Conference on Types for Proofs and Programs (TYPES)</span>, Tallinn, Estonia, 18-21 May, 2015.
+  </li>
+  <li>
+    <span class="author">{MAR}</span>, <span class="author">{EAB}</span>, and <span class="author">{AEV}</span>. <span class="title">Type Soundness for Path Polymorphism</span>.<br/>
+    Proceedings of <span class="conference">10th International Worshop on Logical and Sematic Frameworks, with Appications (LSFA)</span>, Natal, RN, Brazil, 31 August-1 September, 2015.
+  </li>
+</ul>
+
+<h2>Theses</h2>
+<ul>
+  <li>
+    PhD Thesis: <span class="author">{AEV}</span>. <span class="title">Un estudio semántico sobre extensiones avanzadas del &lambda;-cálculo: patrones y operadores de control</span>.<br/>
+    Advisors: <span class="author">{EAB}</span> and <span class="author">{DK}</span>. <a href="https://dc.uba.ar/">Departamento de Computación</a>, <a href="https://exactas.uba.ar/">Facultad de Ciencias Exactas y Naturales</a>, <a href="https://uba.ar/">Universidad de Buenos Aires</a>, Argentina. 2020.
+  </li>
+  <li>
+    Master's Thesis: <span class="author">{AEV}</span>. <span class="title">Sistemas de tipos para &lambda;-cálculo y Lógica Combinatoria</span>.<br/>
+    Advisor: <span class="author">{AA}</span>. <span class="institute">{DC}</span>, <span class="institute">{FCEN}</span>, <span class="institute">{UBA}</span>, Argentina. 2010.
+  </li>
+</ul>
+</div>
+
+<div id="teaching" class="content">
+<h2>2020</h2>
+<ul>
+  <li><span class="title">Lógica y Programacion</span>. Licenciatura en Informática, <span class="institute">{UNQ}</span>.</li>
+</ul>
+
+<h2>2019</h2>
+<ul>
+  <li><span class="title">Lógica y Programacion</span>. Licenciatura en Informática, <span class="institute">{UNQ}</span>.</li>
+</ul>
+
+<h2>2018</h2>
+<ul>
+  <li><span class="title">Lenguajes Formales y Autómatas</span>. Licenciatura en Informática, <span class="institute">{UNQ}</span>.</li>
+  <li><span class="title">Lógica y Programacion</span>. Licenciatura en Informática, <span class="institute">{UNQ}</span>.</li>
+</ul>
+
+<h2>2017</h2>
+<ul>
+  <li><span class="title">Lenguajes Formales y Autómatas</span>. Licenciatura en Informática, <span class="institute">{UNQ}</span>.</li>
+  <li><span class="title">Lógica y Programacion</span>. Licenciatura en Informática, <span class="institute">{UNQ}</span>.</li>
+</ul>
+
+<h2>2016</h2>
+<ul>
+  <li><span class="title">Lenguajes Formales y Autómatas</span>. Licenciatura en Informática, <span class="institute">{UNQ}</span>.</li>
+  <li><span class="title">Lógica y Programacion</span>. Licenciatura en Informática, <span class="institute">{UNQ}</span>.</li>
+</ul>
+
+<h2>2015</h2>
+<ul>
+  <li><span class="title">Estructuras de Datos</span>. Tecnicatura Universitaria en Programación Informática, <span class="institute">{UNQ}</span>.</li>
+  <li><span class="title">Lógica y Programacion</span>. Licenciatura en Informática, <span class="institute">{UNQ}</span>.</li>
+</ul>
+
+<h2>2014</h2>
+<ul>
+  <li><span class="title">Programación Funcional</span>. Tecnicatura Universitaria en Programación Informática, <span class="institute">{UNQ}</span>.</li>
+</ul>
+</div>
+
+<div id="back-matter"></div>
 </body>
 </html>

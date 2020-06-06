@@ -1,0 +1,50 @@
+body
+{
+  font-family: Helvetica;
+  text-align: justify;
+}
+
+#avatar
+{
+  width: 100px;
+  border-radius: 50%;
+}
+
+ul#menu
+{
+  padding: 5px;
+  list-style: none;
+  border: 1px solid black;
+}
+
+ul#menu li
+{
+  cursor: pointer;
+  padding-right: 10px;
+  display: inline;
+}
+
+ul#menu li, a
+{
+  text-decoration: none;
+}
+
+.content
+{
+  display: none;
+}
+
+.conference, .journal
+{
+  font-style: italic;
+}
+
+.title
+{
+  font-weight: bold;
+}
+
+.visible
+{
+  display: block;
+}
