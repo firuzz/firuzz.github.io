@@ -59,7 +59,7 @@ function resolve()
         '{FCEN}' : '<a href="https://exactas.uba.ar/" target="_blank">Facultad de Ciencias Exactas y Naturales</a>',
         '{FDM}'  : '<a href="https://furiademolvania.bandcamp.com/" target="_blank">Furia de Molvania</a>',
         '{KLN}'  : '<a href="https://klunoficial.bandcamp.com/" target="_blank">klun:</a>',
-        '{LRL}'  : '<a href="https://lorel-team.github.io/" target="_blank">LoReL research team</a>',
+        '{LRL}'  : '<a href="https://lorel-team.github.io/" target="_blank">LoReL</a>',
         '{SWH}'  : '<a href="https://www.softwareheritage.org/" target="_blank">Software Heritage</a>',
         '{UBA}'  : '<a href="https://uba.ar/" target="_blank">Universidad de Buenos Aires</a>',
         '{UNQ}'  : '<a href="https://www.unq.edu.ar/" target="_blank">Universidad Nacional de Quilmes</a>'
@@ -73,13 +73,16 @@ function resolve()
   </script>
 </head>
 <body onload="resolve();">
+<div id="body">
 <div id="front-matter">
   <img id="avatar" src="images/profile.jpg" alt="Avatar" />
+  <a href="https://www.softwareheritage.org/" target="_blank"><img id="swh" src="images/SWH.png" alt="SWH" /></a>
+  <a href="https://www.unq.edu.ar/" target="_blank"><img id="unq" src="images/UNQ.png" alt="UNQ" /></a>
 </div>
 
 <div id="main-matter"></div>
 <h1>Andrés Ezequiel Viso</h1>
-<div>Profesor Instructor at <span class="institute">{UNQ}</span>.</div>
+<div><em>Profesor Instructor</em> at <span class="institute">{UNQ}</span>, post-doctoral fellow at <span class="institute">{SWH}</span>.</div>
 
 <ul id="menu">
   <li onclick="show('about');">About</li>
@@ -90,9 +93,9 @@ function resolve()
 <div id="about" class="content visible">
 <p>I studied Computer Science at the University of Buenos Aires and made my PhD on semantics for functional programming languages. My interest vary from theoretical aspects of Computer Science to more practical solutions involving Computer Vision and Artificial Intelligence. Aside of my academical research activity, I've been working on the industry developing software for the past decade. Most of these project involved using GP/GPU technology for real-time audio/video processing combined with AI and CV techniques.</p>
 
-<p>I'm a member of the <span class="institute">{LRL}</span> at <span class="institute">{UNQ}</span>, currently with a post-doc position at <span class="institute">{SWH}</span>.</p>
+<p>I'm a member of the <span class="institute">{LRL}</span> research team at <span class="institute">{UNQ}</span>, currently with a post-doc position at <span class="institute">{SWH}</span>.</p>
 
-<p>I'm also a part time musician, playing bass guitar other instruments in different bands, although I consider myself mainly a guitar player. Got your attention?... Help yourself: <span class="institute">{KLN}</span>, <span class="institute">{FDM}</span>.</p>
+<p>I'm also a part time musician, playing bass guitar and other instruments in different bands, although I consider myself mainly a guitar player. Got your attention?... Help yourself: <span class="institute">{KLN}</span>, <span class="institute">{FDM}</span>.</p>
 </div>
 
 <div id="research" class="content">
@@ -136,7 +139,7 @@ function resolve()
 <ul>
   <li>
     PhD Thesis: <span class="author">{AEV}</span>. <span class="title">Un estudio semántico sobre extensiones avanzadas del &lambda;-cálculo: patrones y operadores de control</span>.<br/>
-    Advisors: <span class="author">{EAB}</span> and <span class="author">{DK}</span>. <a href="https://dc.uba.ar/">Departamento de Computación</a>, <a href="https://exactas.uba.ar/">Facultad de Ciencias Exactas y Naturales</a>, <a href="https://uba.ar/">Universidad de Buenos Aires</a>, Argentina. 2020.
+    Advisors: <span class="author">{EAB}</span> and <span class="author">{DK}</span>. <span class="institute">{DC}</span>, <span class="institute">{FCEN}</span>, <span class="institute">{UBA}</span>, Argentina. 2020.
   </li>
   <li>
     Master's Thesis: <span class="author">{AEV}</span>. <span class="title">Sistemas de tipos para &lambda;-cálculo y Lógica Combinatoria</span>.<br/>
@@ -187,5 +190,6 @@ function resolve()
 </div>
 
 <div id="back-matter"></div>
+</div>
 </body>
 </html>

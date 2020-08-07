@@ -4,10 +4,21 @@ body
   text-align: justify;
 }
 
+#body
+{
+  width: 900px;
+}
+
 #avatar
 {
-  width: 100px;
+  height: 100px;
   border-radius: 50%;
+}
+
+#swh, #unq
+{
+  height: 100px;
+  margin-left: 20px;
 }
 
 ul#menu
@@ -26,7 +37,13 @@ ul#menu li
 
 ul#menu li, a
 {
+  color: blue;
   text-decoration: none;
+}
+
+ul#menu li:hover, a:hover
+{
+  color: blue;
 }
 
 .content
