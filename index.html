@@ -70,6 +70,11 @@ function resolve()
         elems[i].innerHTML = institutes[elems[i].textContent]
     }
 }
+
+function toggle(id)
+{
+    document.getElementById(id).classList.toggle('visible')
+}
   </script>
 </head>
 <body onload="resolve();">
@@ -104,6 +109,21 @@ function resolve()
   <li>
     <span class="author">{MAR}</span>, <span class="author">{EAB}</span>, <span class="author">{JIE}</span>, and <span class="author">{AEV}</span>. <span class="title">Typed Path Polymorphism</span>.<br/>
     <span class="journal">Theoretical Computer Science</span>. 781: 111-130, 2019.
+    <span class="footnote">[ <a href="https://doi.org/10.1016/j.tcs.2019.02.018" target="_blank">Paper</a> &ndash; <a href="#" onclick="toggle('bibtex-tcs2019')">BibTeX</a> ]</span>
+    <pre id="bibtex-tcs2019" class="bibtex">
+@article{Ayala-RinconBEV19,
+  author    = {Mauricio Ayala{-}Rinc{\'{o}}n and
+               Eduardo Bonelli and
+               Juan Edi and
+               Andr{\'{e}}s Viso},
+  title     = {Typed path polymorphism},
+  journal   = {Theor. Comput. Sci.},
+  volume    = {781},
+  pages     = {111--130},
+  year      = {2019},
+  url       = {https://doi.org/10.1016/j.tcs.2019.02.018},
+  doi       = {10.1016/j.tcs.2019.02.018}
+}</pre>
   </li>
 </ul>
 
@@ -112,26 +132,143 @@ function resolve()
   <li>
     <span class="author">{AM}</span>, <span class="author">{ANR}</span>, and <span class="author">{AEV}</span>. <span class="title">Pure Pattern Calculus à la de Bruijn</span>.<br/>
     Proceedings of <span class="conference">15th International Worshop on Logical and Sematic Frameworks, with Appications (LSFA)</span>, Salvador, BA, Brazil, 27-28 August, 2020.
+    <span class="footnote">[ <a href="https://doi.org/10.1016/j.entcs.2020.08.006" target="_blank">Paper</a> &ndash; <a href="https://arxiv.org/abs/2006.07674" target="_blank">Report</a> &ndash; <a href="#" onclick="toggle('bibtex-lsfa2020')">BibTeX</a> ]</span>
+    <pre id="bibtex-lsfa2020" class="bibtex">
+@inproceedings{MartinRV20,
+  author    = {Alexis Mart{\'{\i}}n and
+               Alejandro R{\'{\i}}os and
+               Andr{\'{e}}s Viso},
+  editor    = {Cl{\'{a}}udia Nalon and
+               Giselle Reis},
+  title     = {Pure Pattern Calculus {\`{a}} la de Bruijn},
+  booktitle = {Proceedings of the Fifteenth Workshop on Logical and Semantic Frameworks,
+               with Applications, {LSFA} 2020, Salvador, Brazil, August 27 - 28, 2020},
+  series    = {Electronic Notes in Theoretical Computer Science},
+  volume    = {351},
+  pages     = {95--113},
+  publisher = {Elsevier},
+  year      = {2020},
+  url       = {https://doi.org/10.1016/j.entcs.2020.08.006},
+  doi       = {10.1016/j.entcs.2020.08.006}
+}</pre>
   </li>
   <li>
     <span class="author">{AB}</span>, <span class="author">{DK}</span>, <span class="author">{ANR}</span>, and <span class="author">{AEV}</span>. <span class="title">The Bang Calculus Revisited</span>.<br/>
     Proceedings of <span class="conference">15th International Symposium on Functional and Logic Programming (FLOPS)</span>, Akita, Japan, 14-16 September, 2020.
+    <span class="footnote">[ <a href="https://doi.org/10.1007/978-3-030-59025-3_2" target="_blank">Paper</a> &ndash; <a href="https://arxiv.org/abs/2002.04011" target="_blank">Report</a> &ndash; <a href="#" onclick="toggle('bibtex-flops2020')">BibTeX</a> ]</span>
+    <pre id="bibtex-flops2020" class="bibtex">
+@inproceedings{BucciarelliKRV20,
+  author    = {Antonio Bucciarelli and
+               Delia Kesner and
+               Alejandro R{\'{\i}}os and
+               Andr{\'{e}}s Viso},
+  editor    = {Keisuke Nakano and
+               Konstantinos Sagonas},
+  title     = {The Bang Calculus Revisited},
+  booktitle = {Functional and Logic Programming - 15th International Symposium, {FLOPS}
+               2020, Akita, Japan, September 14-16, 2020, Proceedings},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12073},
+  pages     = {13--32},
+  publisher = {Springer},
+  year      = {2020},
+  url       = {https://doi.org/10.1007/978-3-030-59025-3\_2},
+  doi       = {10.1007/978-3-030-59025-3\_2}
+}</pre>
   </li>
   <li>
     <span class="author">{EAB}</span>, <span class="author">{DK}</span>, and <span class="author">{AEV}</span>. <span class="title">Strong Bisimulation for Control Operators</span>.<br/>
     Proceedings of <span class="conference">28th EACSL International Conference on Conputer Science and Logic (CSL)</span>, Barcelona, Spain, 13-16 January, 2020.
+    <span class="footnote">[ <a href="https://doi.org/10.4230/LIPIcs.CSL.2020.4" target="_blank">Paper</a> &ndash; <a href="https://arxiv.org/abs/1906.09370" target="_blank">Report</a> &ndash; <a href="#" onclick="toggle('bibtex-csl2020')">BibTeX</a> ]</span>
+    <pre id="bibtex-csl2020" class="bibtex">
+@inproceedings{KesnerBV20,
+  author    = {Delia Kesner and
+               Eduardo Bonelli and
+               Andr{\'{e}}s Viso},
+  editor    = {Maribel Fern{\'{a}}ndez and
+               Anca Muscholl},
+  title     = {Strong Bisimulation for Control Operators},
+  booktitle = {28th {EACSL} Annual Conference on Computer Science Logic, {CSL} 2020,
+               January 13-16, 2020, Barcelona, Spain},
+  series    = {LIPIcs},
+  volume    = {152},
+  pages     = {4:1--4:23},
+  publisher = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+  year      = {2020},
+  url       = {https://doi.org/10.4230/LIPIcs.CSL.2020.4},
+  doi       = {10.4230/LIPIcs.CSL.2020.4}
+}</pre>
   </li>
   <li>
     <span class="author">{DK}</span>, <span class="author">{ANR}</span>, and <span class="author">{AEV}</span>. <span class="title">Call-by-Need, Neededness and All That</span>.<br/>
     Proceedings of <span class="conference">21st International Conference on Foundations of Software Science and Computation Structures (FoSSaCS)</span>, Thessaloniki, Greece, 14-20 April, 2018.
+    <span class="footnote">[ <a href="https://doi.org/10.1007/978-3-319-89366-2_13" target="_blank">Paper</a> &ndash; <a href="https://arxiv.org/abs/1801.10519" target="_blank">Report</a> &ndash; <a href="#" onclick="toggle('bibtex-fossacs2018')">BibTeX</a> ]</span>
+    <pre id="bibtex-fossacs2018" class="bibtex">
+@inproceedings{KesnerRV18,
+  author    = {Delia Kesner and
+               Alejandro R{\'{\i}}os and
+               Andr{\'{e}}s Viso},
+  editor    = {Christel Baier and
+               Ugo Dal Lago},
+  title     = {Call-by-Need, Neededness and All That},
+  booktitle = {Foundations of Software Science and Computation Structures - 21st
+               International Conference, {FOSSACS} 2018, Held as Part of the European
+               Joint Conferences on Theory and Practice of Software, {ETAPS} 2018,
+               Thessaloniki, Greece, April 14-20, 2018, Proceedings},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {10803},
+  pages     = {241--257},
+  publisher = {Springer},
+  year      = {2018},
+  url       = {https://doi.org/10.1007/978-3-319-89366-2\_13},
+  doi       = {10.1007/978-3-319-89366-2\_13}
+}</pre>
   </li>
   <li>
     <span class="author">{JIE}</span>, <span class="author">{EAB}</span>, and <span class="author">{AEV}</span>. <span class="title">Efficient Type Checking for Path Polymorphism</span>.<br/>
     Post-proceedings of <span class="conference">21st International Conference on Types for Proofs and Programs (TYPES)</span>, Tallinn, Estonia, 18-21 May, 2015.
+    <span class="footnote">[ <a href="https://doi.org/10.4230/LIPIcs.TYPES.2015.6" target="_blank">Paper</a> &ndash; <a href="https://arxiv.org/abs/1704.09026" target="_blank">Report</a> &ndash; <a href="#" onclick="toggle('bibtex-types2015')">BibTeX</a> ]</span>
+    <pre id="bibtex-types2015" class="bibtex">
+@inproceedings{EdiVB15,
+  author    = {Juan Edi and
+               Andr{\'{e}}s Viso and
+               Eduardo Bonelli},
+  editor    = {Tarmo Uustalu},
+  title     = {Efficient Type Checking for Path Polymorphism},
+  booktitle = {21st International Conference on Types for Proofs and Programs, {TYPES}
+               2015, May 18-21, 2015, Tallinn, Estonia},
+  series    = {LIPIcs},
+  volume    = {69},
+  pages     = {6:1--6:23},
+  publisher = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+  year      = {2015},
+  url       = {https://doi.org/10.4230/LIPIcs.TYPES.2015.6},
+  doi       = {10.4230/LIPIcs.TYPES.2015.6}
+}</pre>
   </li>
   <li>
     <span class="author">{MAR}</span>, <span class="author">{EAB}</span>, and <span class="author">{AEV}</span>. <span class="title">Type Soundness for Path Polymorphism</span>.<br/>
     Proceedings of <span class="conference">10th International Worshop on Logical and Sematic Frameworks, with Appications (LSFA)</span>, Natal, RN, Brazil, 31 August-1 September, 2015.
+    <span class="footnote">[ <a href="https://doi.org/10.1016/j.entcs.2016.06.015" target="_blank">Paper</a> &ndash; <a href="https://arxiv.org/abs/1601.03271" target="_blank">Report</a> &ndash; <a href="#" onclick="toggle('bibtex-lsfa2015')">BibTeX</a> ]</span>
+    <pre id="bibtex-lsfa2015" class="bibtex">
+@inproceedings{VisoBA15,
+  author    = {Andr{\'{e}}s Viso and
+               Eduardo Bonelli and
+               Mauricio Ayala{-}Rinc{\'{o}}n},
+  editor    = {Mario R. F. Benevides and
+               Ren{\'{e}} Thiemann},
+  title     = {Type Soundness for Path Polymorphism},
+  booktitle = {Proceedings of the Tenth Workshop on Logical and Semantic Frameworks,
+               with Applications, {LSFA} 2015, Natal, Brazil, August 31 - September
+               1, 2015},
+  series    = {Electronic Notes in Theoretical Computer Science},
+  volume    = {323},
+  pages     = {235--251},
+  publisher = {Elsevier},
+  year      = {2015},
+  url       = {https://doi.org/10.1016/j.entcs.2016.06.015},
+  doi       = {10.1016/j.entcs.2016.06.015}
+}</pre>
   </li>
 </ul>
 
@@ -139,11 +276,29 @@ function resolve()
 <ul>
   <li>
     PhD Thesis: <span class="author">{AEV}</span>. <span class="title">Un estudio semántico sobre extensiones avanzadas del &lambda;-cálculo: patrones y operadores de control</span>.<br/>
-    Advisors: <span class="author">{EAB}</span> and <span class="author">{DK}</span>. <span class="institute">{DC}</span>, <span class="institute">{FCEN}</span>, <span class="institute">{UBA}</span>, Argentina. 2020.
+    Advisors: <span class="author">{EAB}</span> and <span class="author">{DK}</span>. <span class="institute">{DC}</span>, <span class="institute">{FCEN}</span>, <span class="institute">{UBA}</span>, Argentina. 22 July, 2020.
+    <span class="footnote">[ <a href="docs/Thesis-PhD.pdf" target="_blank">Thesis</a> &ndash; <a href="#" onclick="toggle('bibtex-thesis2020')">BibTeX</a> ]</span>
+    <pre id="bibtex-thesis2020" class="bibtex">
+@phdthesis{Viso20,
+  author       = {Andr{\'{e}}s Viso}, 
+  title        = {Un estudio sem{\'{a}}ntico sobre extensiones avanzadas del $\lambda$-c{\'{a}}lculo: patrones y operadores de control},
+  school       = {Universidad de Buenos Aires},
+  year         = {2020},
+  month        = {7}
+}</pre>
   </li>
   <li>
     Master's Thesis: <span class="author">{AEV}</span>. <span class="title">Sistemas de tipos para &lambda;-cálculo y Lógica Combinatoria</span>.<br/>
-    Advisor: <span class="author">{AA}</span>. <span class="institute">{DC}</span>, <span class="institute">{FCEN}</span>, <span class="institute">{UBA}</span>, Argentina. 2010.
+    Advisor: <span class="author">{AA}</span>. <span class="institute">{DC}</span>, <span class="institute">{FCEN}</span>, <span class="institute">{UBA}</span>, Argentina. 23 February, 2010.
+    <span class="footnote">[ <a href="docs/Thesis-MSc.pdf" target="_blank">Thesis</a> &ndash; <a href="#" onclick="toggle('bibtex-thesis2010')">BibTeX</a> ]</span>
+    <pre id="bibtex-thesis2010" class="bibtex">
+@mastersthesis{Viso10,
+  author       = {Andr{\'{e}}s Viso}, 
+  title        = {Sistemas de tipos para $\lambda$-c{\'{a}}lculo y L{\'{o}}gica Combinatoria},
+  school       = {Universidad de Buenos Aires},
+  year         = {2010},
+  month        = {2}
+}</pre>
   </li>
 </ul>
 </div>

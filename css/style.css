@@ -46,6 +46,11 @@ ul#menu li:hover, a:hover
   color: blue;
 }
 
+.bibtex
+{
+  display: none;
+}
+
 .content
 {
   display: none;
@@ -54,6 +59,11 @@ ul#menu li:hover, a:hover
 .conference, .journal
 {
   font-style: italic;
+}
+
+.footnote
+{
+  font-size: small;
 }
 
 .title
