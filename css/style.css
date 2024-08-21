@@ -15,9 +15,9 @@ body
   border-radius: 50%;
 }
 
-#swh, #unq, #indos
+#elequation, #indos, #swh, #unq
 {
-  height: 100px;
+  height: 85px;
   margin-left: 20px;
 }
 
